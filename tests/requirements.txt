@@ -1,0 +1,10 @@
+model-mommy
+django_nose
+nose
+spec
+nose-progressive
+django-coverage
+xtraceback
+coverage>=3.7.1
+flake8==2.1.0
+unittest2

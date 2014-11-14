@@ -1,0 +1,8 @@
+*.py[cod]
+*.log
+*.sublime*
+*egg*
+dist
+build
+.coverage
+.tox
