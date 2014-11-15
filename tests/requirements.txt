@@ -1,3 +1,5 @@
+django
+django-uuslug
 django-extensions
 django-localflavor
 model-mommy
