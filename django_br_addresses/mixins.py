@@ -13,6 +13,7 @@ from localflavor.br.br_states import STATE_CHOICES
 from uuslug import uuslug
 
 # Imports from your apps
+from .choices import KIND_STREET
 
 
 @python_2_unicode_compatible
@@ -40,8 +41,8 @@ class CityMixin(TimeStampedModel):
     class Meta:
         abstract = True
         ordering = ('state', 'name')
-        verbose_name = _(u'city')
-        verbose_name_plural = _(u'cities')
+        verbose_name = _(u'City')
+        verbose_name_plural = _(u'Cities')
         unique_together = ('name', 'state')
 
     def __unicode__(self):
@@ -63,7 +64,7 @@ class AddressMixin(TimeStampedModel):
     """
 
     zip_code = models.CharField(
-        verbose_name=_('Zip Code'),
+        verbose_name=_(u'Zip Code'),
         max_length=9
     )
 
@@ -73,10 +74,16 @@ class AddressMixin(TimeStampedModel):
         default=u'center'
     )
 
+    kind_street = models.CharField(
+        verbose_name=_(u'Kind Street'),
+        max_length=2,
+        choices=KIND_STREET
+    )
+
     street = models.CharField(
         max_length=100,
         verbose_name=_(u'Street'),
-        help_text=_(u'street or avenue or alley or highway ... plus a name')
+        help_text=_(u'street or avenue or alley or highway ... plus a address')
     )
 
     number = models.IntegerField(
