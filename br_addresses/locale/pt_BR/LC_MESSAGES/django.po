@@ -226,10 +226,6 @@ msgstr "Bairro"
 msgid "Kind Street"
 msgstr "Tipo logradouro"
 
-#: mixins.py:83
-msgid "Street"
-msgstr "Rua"
-
 #: mixins.py:86
 msgid "street or avenue or alley or highway ... plus a address"
 msgstr "Rua ou avenida ou viela ou rodovia ... mais um endereço"
