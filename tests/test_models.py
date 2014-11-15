@@ -13,7 +13,7 @@ from model_mommy import mommy
 
 # Relative apps imports
 
-from django_br_locations.models import (
+from django_br_addresses.models import (
     City, Address
 )
 
