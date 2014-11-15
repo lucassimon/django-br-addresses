@@ -1,0 +1,251 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Lucas Simon Rodrigues Magalhaes <lucassrod@gmail.com>, 2014.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-15 19:02-0200\n"
+"PO-Revision-Date: 2014-11-15 07:05\n"
+"Last-Translator: Lucas Simon Rodrigues Magalhães <lucassrod@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: PT-BR \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: choices.py:9
+msgid "Airport"
+msgstr "Aeroporto"
+
+#: choices.py:10
+msgid "Mall"
+msgstr "Alameda"
+
+#: choices.py:11
+msgid "Area"
+msgstr "Área"
+
+#: choices.py:12
+msgid "Avenue"
+msgstr "Avenida"
+
+#: choices.py:13
+msgid "Camp"
+msgstr "Campo"
+
+#: choices.py:14
+msgid "Ranch"
+msgstr "Chacára"
+
+#: choices.py:15
+msgid "Colonial"
+msgstr "Colônia"
+
+#: choices.py:16
+msgid "Townhouse"
+msgstr "Condomínio"
+
+#: choices.py:17
+msgid "Cluster"
+msgstr "Conjunto"
+
+#: choices.py:18
+msgid "District"
+msgstr "Distrito"
+
+#: choices.py:19
+msgid "Esplanade"
+msgstr "Esplanada"
+
+#: choices.py:20
+msgid "Station"
+msgstr "Estação"
+
+#: choices.py:21 choices.py:49
+msgid "Road"
+msgstr "Estrada"
+
+#: choices.py:22
+msgid "Favela"
+msgstr "Favela"
+
+#: choices.py:23
+msgid "Farm"
+msgstr "fazenda"
+
+#: choices.py:24
+msgid "Market"
+msgstr "Feira"
+
+#: choices.py:25
+msgid "Garden"
+msgstr "Jardim"
+
+#: choices.py:26
+msgid "Hill"
+msgstr "Ladeira"
+
+#: choices.py:27
+msgid "Lake"
+msgstr "Lago"
+
+#: choices.py:28
+msgid "Pond"
+msgstr "Lagoa"
+
+#: choices.py:29
+msgid "Large"
+msgstr "Largo"
+
+#: choices.py:30
+msgid "Subdivision"
+msgstr "Loteamento"
+
+#: choices.py:31
+msgid "Morro"
+msgstr "Morro"
+
+#: choices.py:32
+msgid "Core"
+msgstr "Núcleo"
+
+#: choices.py:33
+msgid "Park"
+msgstr "Parque"
+
+#: choices.py:34
+msgid "Walkway"
+msgstr "Passarela"
+
+#: choices.py:35
+msgid "Courtyard"
+msgstr "Pátio"
+
+#: choices.py:36
+msgid "Square"
+msgstr "Praça"
+
+#: choices.py:37
+msgid "Court"
+msgstr "Quadra"
+
+#: choices.py:38
+msgid "Nook"
+msgstr "Recanto"
+
+#: choices.py:39
+msgid "Residential"
+msgstr "Residêncial"
+
+#: choices.py:40
+msgid "Highway"
+msgstr "Rodovia"
+
+#: choices.py:41 mixins.py:85
+msgid "Street"
+msgstr "Rua"
+
+#: choices.py:42
+msgid "Sector"
+msgstr "Setor"
+
+#: choices.py:43
+msgid "Grange"
+msgstr "Sítio"
+
+#: choices.py:44
+msgid "Lane"
+msgstr "Travessa"
+
+#: choices.py:45
+msgid "Passage"
+msgstr "Trecho"
+
+#: choices.py:46
+msgid "Clover"
+msgstr "Trevo"
+
+#: choices.py:47
+msgid "Valley"
+msgstr "Vale"
+
+#: choices.py:48
+msgid "Path"
+msgstr "Vereda"
+
+#: choices.py:50
+msgid "Viaduct"
+msgstr "Viaduto"
+
+#: choices.py:51
+msgid "Alley"
+msgstr "Viela"
+
+#: choices.py:52
+msgid "Village"
+msgstr "Vila"
+
+#: forms.py:50 mixins.py:67
+msgid "Zip Code"
+msgstr "Cep"
+
+#: forms.py:51
+msgid "Enter a zip code in the format XXXXX-XXX."
+msgstr "Insira um cep no formato XXXXX-XXX"
+
+#: mixins.py:26
+msgid "State"
+msgstr "Estado"
+
+#: mixins.py:32
+msgid "Name"
+msgstr "Nome"
+
+#: mixins.py:37 mixins.py:101
+msgid "Slug"
+msgstr "Slug"
+
+#: mixins.py:44 models.py:30
+msgid "City"
+msgstr "Cidade"
+
+#: mixins.py:45
+msgid "Cities"
+msgstr "Cidades"
+
+#: mixins.py:73
+msgid "Neighborhood"
+msgstr "Bairro"
+
+#: mixins.py:78
+msgid "Kind Street"
+msgstr "Tipo logradouro"
+
+#: mixins.py:83
+msgid "Street"
+msgstr "Rua"
+
+#: mixins.py:86
+msgid "street or avenue or alley or highway ... plus a address"
+msgstr "Rua ou avenida ou viela ou rodovia ... mais um endereço"
+
+#: mixins.py:90
+msgid "Number"
+msgstr "Número"
+
+#: mixins.py:97
+msgid "Complement"
+msgstr "Complemento"
+
+#: mixins.py:124
+msgid "Address"
+msgstr "Endereço"
+
+#: mixins.py:125
+msgid "Addresses"
+msgstr "Endereços"

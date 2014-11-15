@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-15 19:02-0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: choices.py:9
+msgid "Airport"
+msgstr ""
+
+#: choices.py:10
+msgid "Mall"
+msgstr ""
+
+#: choices.py:11
+msgid "Area"
+msgstr ""
+
+#: choices.py:12
+msgid "Avenue"
+msgstr ""
+
+#: choices.py:13
+msgid "Camp"
+msgstr ""
+
+#: choices.py:14
+msgid "Ranch"
+msgstr ""
+
+#: choices.py:15
+msgid "Colonial"
+msgstr ""
+
+#: choices.py:16
+msgid "Townhouse"
+msgstr ""
+
+#: choices.py:17
+msgid "Cluster"
+msgstr ""
+
+#: choices.py:18
+msgid "District"
+msgstr ""
+
+#: choices.py:19
+msgid "Esplanade"
+msgstr ""
+
+#: choices.py:20
+msgid "Station"
+msgstr ""
+
+#: choices.py:21 choices.py:49
+msgid "Road"
+msgstr ""
+
+#: choices.py:22
+msgid "Favela"
+msgstr ""
+
+#: choices.py:23
+msgid "Farm"
+msgstr ""
+
+#: choices.py:24
+msgid "Market"
+msgstr ""
+
+#: choices.py:25
+msgid "Garden"
+msgstr ""
+
+#: choices.py:26
+msgid "Hill"
+msgstr ""
+
+#: choices.py:27
+msgid "Lake"
+msgstr ""
+
+#: choices.py:28
+msgid "Pond"
+msgstr ""
+
+#: choices.py:29
+msgid "Large"
+msgstr ""
+
+#: choices.py:30
+msgid "Subdivision"
+msgstr ""
+
+#: choices.py:31
+msgid "Morro"
+msgstr ""
+
+#: choices.py:32
+msgid "Core"
+msgstr ""
+
+#: choices.py:33
+msgid "Park"
+msgstr ""
+
+#: choices.py:34
+msgid "Walkway"
+msgstr ""
+
+#: choices.py:35
+msgid "Courtyard"
+msgstr ""
+
+#: choices.py:36
+msgid "Square"
+msgstr ""
+
+#: choices.py:37
+msgid "Court"
+msgstr ""
+
+#: choices.py:38
+msgid "Nook"
+msgstr ""
+
+#: choices.py:39
+msgid "Residential"
+msgstr ""
+
+#: choices.py:40
+msgid "Highway"
+msgstr ""
+
+#: choices.py:41 mixins.py:85
+msgid "Street"
+msgstr ""
+
+#: choices.py:42
+msgid "Sector"
+msgstr ""
+
+#: choices.py:43
+msgid "Grange"
+msgstr ""
+
+#: choices.py:44
+msgid "Lane"
+msgstr ""
+
+#: choices.py:45
+msgid "Passage"
+msgstr ""
+
+#: choices.py:46
+msgid "Clover"
+msgstr ""
+
+#: choices.py:47
+msgid "Valley"
+msgstr ""
+
+#: choices.py:48
+msgid "Path"
+msgstr ""
+
+#: choices.py:50
+msgid "Viaduct"
+msgstr ""
+
+#: choices.py:51
+msgid "Alley"
+msgstr ""
+
+#: choices.py:52
+msgid "Village"
+msgstr ""
+
+#: forms.py:50 mixins.py:67
+msgid "Zip Code"
+msgstr ""
+
+#: forms.py:51
+msgid "Enter a zip code in the format XXXXX-XXX."
+msgstr ""
+
+#: mixins.py:26
+msgid "State"
+msgstr ""
+
+#: mixins.py:32
+msgid "Name"
+msgstr ""
+
+#: mixins.py:37 mixins.py:101
+msgid "Slug"
+msgstr ""
+
+#: mixins.py:44 models.py:30
+msgid "City"
+msgstr ""
+
+#: mixins.py:45
+msgid "Cities"
+msgstr ""
+
+#: mixins.py:73
+msgid "Neighborhood"
+msgstr ""
+
+#: mixins.py:78
+msgid "Kind Street"
+msgstr ""
+
+#: mixins.py:86
+msgid "street or avenue or alley or highway ... plus a address"
+msgstr ""
+
+#: mixins.py:90
+msgid "Number"
+msgstr ""
+
+#: mixins.py:97
+msgid "Complement"
+msgstr ""
+
+#: mixins.py:124
+msgid "Address"
+msgstr ""
+
+#: mixins.py:125
+msgid "Addresses"
+msgstr ""
