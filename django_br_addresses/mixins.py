@@ -6,7 +6,7 @@
 from django.db import models
 from django.utils.translation import ugettext as _
 from django.utils.encoding import python_2_unicode_compatible
-
+from django.utils.text import slugify
 # Third-party app imports
 from django_extensions.db.models import TimeStampedModel
 from localflavor.br.br_states import STATE_CHOICES
@@ -45,13 +45,13 @@ class CityMixin(TimeStampedModel):
         unique_together = ('name', 'state')
 
     def __unicode__(self):
-        return u'{} - {}'.format(self.state, self.name)
+        return u'{0} - {1}'.format(self.state, self.name)
 
     def __str__(self):
-        return u'{} - {}'.format(self.state, self.name)
+        return u'{0} - {1}'.format(self.state, self.name)
 
     def save(self, *args, **kw):
-        slug = '{} {}'.format(self.state, self.name)
+        slug = '{0} {1}'.format(self.state, self.name)
         self.slug = uuslug(slug, instance=self, start_no=1)
         super(CityMixin, self).save(*args, **kw)
 
@@ -68,13 +68,13 @@ class AddressMixin(TimeStampedModel):
     )
 
     neighborhood = models.CharField(
-        max_length=200,
+        max_length=100,
         verbose_name=_(u'Neighborhood'),
         default=u'center'
     )
 
     street = models.CharField(
-        max_length=200,
+        max_length=100,
         verbose_name=_(u'Street'),
         help_text=_(u'street or avenue or alley or highway ... plus a name')
     )
@@ -89,6 +89,23 @@ class AddressMixin(TimeStampedModel):
         null=True,
         verbose_name=_(u'Complement')
     )
+
+    slug = models.SlugField(
+        verbose_name=_(u'Slug'),
+        max_length='200',
+        unique=True
+    )
+
+    def save(self, *args, **kw):
+        slug = u'{0} {1} {2} {3} {4}'.format(
+            self.city.state,
+            self.city.name,
+            self.street,
+            self.number,
+            self.neighborhood,
+        )
+        self.slug = slugify(slug)
+        super(AddressMixin, self).save(*args, **kw)
 
     class Meta:
         """
@@ -105,7 +122,7 @@ class AddressMixin(TimeStampedModel):
         Retorna o endereço
         como unicode.
         """
-        return u'{}, {} - {} , {} , {}'.format(
+        return u'{0}, {1} - {2} , {3} , {4}'.format(
             self.city.state,
             self.city.name,
             self.street,
@@ -118,7 +135,7 @@ class AddressMixin(TimeStampedModel):
         Retorna o endereço
         como unicode.
         """
-        return u'{}, {} - {} , {} , {}'.format(
+        return u'{0}, {1} - {2} , {3} , {4}'.format(
             self.city.state,
             self.city.name,
             self.street,
