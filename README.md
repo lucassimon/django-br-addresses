@@ -45,6 +45,16 @@ INSTALLED APPS = [
 ]
 ```
 
+### To use in django<1.7
+
+```
+SOUTH_MIGRATION_MODULES = {
+    'django-br-addresses.br_addresses': 'django-br-addresses.br_addresses.south_migrations',
+}
+
+```
+
+
 ## Running tests
 
 Install the requirements in tests directory
@@ -56,6 +66,8 @@ Go to a tests directory and run the command below
 ```
 python manage.py runstests.py
 ```
+
+
 
 ## Todo
 
