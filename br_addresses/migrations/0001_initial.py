@@ -20,7 +20,8 @@ class Migration(migrations.Migration):
                 ('modified', django_extensions.db.fields.ModificationDateTimeField(default=django.utils.timezone.now, verbose_name='modified', editable=False, blank=True)),
                 ('zip_code', models.CharField(max_length=9, verbose_name='Zip Code')),
                 ('neighborhood', models.CharField(default='center', max_length=100, verbose_name='Neighborhood')),
-                ('street', models.CharField(help_text='street or avenue or alley or highway ... plus a name', max_length=100, verbose_name='Street')),
+                ('kind_street', models.CharField(max_length=2, verbose_name='Kind Street', choices=[(b'1', 'Airport'), (b'2', 'Mall'), (b'3', 'Area'), (b'4', 'Avenue'), (b'5', 'Camp'), (b'6', 'Ranch'), (b'7', 'Colonial'), (b'8', 'Townhouse'), (b'9', 'Cluster'), (b'10', 'District'), (b'11', 'Esplanade'), (b'12', 'Station'), (b'13', 'Road'), (b'14', 'Favela'), (b'15', 'Farm'), (b'16', 'Market'), (b'17', 'Garden'), (b'18', 'Hill'), (b'19', 'Lake'), (b'20', 'Pond'), (b'21', 'Large'), (b'22', 'Subdivision'), (b'23', 'Morro'), (b'24', 'Core'), (b'25', 'Park'), (b'26', 'Walkway'), (b'27', 'Courtyard'), (b'28', 'Square'), (b'29', 'Court'), (b'30', 'Nook'), (b'31', 'Residential'), (b'32', 'Highway'), (b'33', 'Street'), (b'34', 'Sector'), (b'35', 'Grange'), (b'36', 'Lane'), (b'37', 'Passage'), (b'38', 'Clover'), (b'39', 'Valley'), (b'40', 'Caminho'), (b'41', 'Road'), (b'42', 'Viaduct'), (b'43', 'Alley'), (b'44', 'Village')])),
+                ('street', models.CharField(help_text='street or avenue or alley or highway ... plus a address', max_length=100, verbose_name='Street')),
                 ('number', models.IntegerField(default=1000, verbose_name='Number')),
                 ('complement', models.TextField(null=True, verbose_name='Complement', blank=True)),
                 ('slug', models.SlugField(unique=True, max_length=b'200', verbose_name='Slug')),
@@ -46,8 +47,8 @@ class Migration(migrations.Migration):
             options={
                 'ordering': ('state', 'name'),
                 'abstract': False,
-                'verbose_name': 'city',
-                'verbose_name_plural': 'cities',
+                'verbose_name': 'City',
+                'verbose_name_plural': 'Cities',
             },
             bases=(models.Model,),
         ),
@@ -58,7 +59,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='address',
             name='city',
-            field=models.ForeignKey(verbose_name='City', to='django_br_addresses.City'),
+            field=models.ForeignKey(verbose_name='City', to='br_addresses.City'),
             preserve_default=True,
         ),
     ]
